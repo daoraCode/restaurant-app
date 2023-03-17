@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { Restaurant } from '../models/Restaurant';
+import { Restaurant } from '../model/Restaurant';
 
 type RestaurantsContextProps = {
   children: React.ReactNode;

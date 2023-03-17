@@ -1,0 +1,6 @@
+.card-container {
+    padding: 2em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
