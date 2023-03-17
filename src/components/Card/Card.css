@@ -1,6 +1,11 @@
-.card-container {
+.card-dontainer {
+    display: block;
+}
+
+.inner {
     padding: 2em;
     display: flex;
     text-align: center;
     align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

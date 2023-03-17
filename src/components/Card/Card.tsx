@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Restaurant } from '../../model/Restaurant';
+import { RestaurantType } from '../../model/Restaurant';
 
 type RestaurantTypeProps = {
-  restaurant: Restaurant;
+  restaurant: RestaurantType;
 };
 
 export const Card = ({ restaurant }: RestaurantTypeProps) => {

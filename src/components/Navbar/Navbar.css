@@ -1,8 +1,43 @@
-.header {
-    color: black;
-    background-color: rgb(255, 252, 238);
-    display: flex;
-    height: 80px;
+.blur-container {
+    align-items: baseline;
     justify-content: center;
+    backdrop-filter: blur(13.9px) brightness(99%) saturate(90%);
+}
+
+.header {
+    top: 0;
+    left: 0;
+    margin: 1em;
+    box-sizing: border-box;
+    height: 80px;
+    background: linear-gradient(-65deg, #ee7652, #3ce7d3, #FFC500, #00ff4849);
+	background-size: 500% 500%;
+	animation: gradient 6s ease infinite;
+    display: flex;
     align-items: center;
+    justify-content: center;
+
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: rgb(39, 74, 69);
+}
+
+.navbar-link > p {
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
 }
