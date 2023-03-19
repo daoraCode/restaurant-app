@@ -1,18 +1,16 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { RestaurantType } from '../../model/Restaurant';
 import { Card } from '../Card/Card';
+// restaurants customized context
+import { useRestaurantContext } from '../../contexts/RestaurantContext';
 
-type RestaurantListProp = {
-  restaurants: RestaurantType[];
-};
-
-export const CardList = ({ restaurants }: RestaurantListProp) => {
+export const CardList = () => {
+  // useContext hook invoked to consume actual context
+  const { restaurants } = useRestaurantContext();
   return (
-    <div className='cards-grid'>
-      {restaurants?.map((el: RestaurantType) => (
-        <Link to={{ pathname: `/restaurants/${el.id}` }}>
-          <Card restaurant={el} key={el.id} />
+    <div className='card-grid'>
+      {restaurants.map((restaurant) => (
+        <Link to={{ pathname: `/restaurants/${restaurant.id}` }}>
+          <Card restaurant={restaurant} key={restaurant.id} />
         </Link>
       ))}
     </div>

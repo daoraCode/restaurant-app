@@ -1,11 +1,11 @@
-.card-dontainer {
-    display: block;
-}
-
-.inner {
+.grid-item {
+    background-color: aquamarine;
     padding: 2em;
-    display: flex;
+    /* display: flex; */
+    display: block;
     text-align: center;
     align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 400px;
+    height: 400px;
+    z-index: 20 !important;
 }
