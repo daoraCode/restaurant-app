@@ -1,4 +1,5 @@
 import React from 'react';
+import './Card.css';
 
 import { Restaurant } from '../../model/Restaurant';
 
@@ -11,8 +12,8 @@ export const Card = ({ restaurant }: RestaurantTypeProps) => {
     <div className='grid-item'>
       <div className='inner_grid'>
         <img src={`${restaurant.img}`} alt='meal' loading='lazy' />
-        <h2 className='card-title'>{restaurant.name}</h2>
-        <h2 className='card-title'>{restaurant.description_short}</h2>
+        <p className='card-name'>{restaurant.name}</p>
+        <p className='card-description'>{restaurant.description_short}</p>
       </div>
       <div className='grid-item-like-button'></div>
     </div>

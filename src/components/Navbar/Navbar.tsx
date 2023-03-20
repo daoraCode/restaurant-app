@@ -9,7 +9,7 @@ export const Navbar = () => {
     <div className='blur-container'>
       <header className='header'>
         <Link className='navbar-link' to='/'>
-          <p>Le Restaurant Vanille</p>
+          Restaurants Adorés
         </Link>
       </header>
     </div>

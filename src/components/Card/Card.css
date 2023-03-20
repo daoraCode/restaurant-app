@@ -1,11 +1,35 @@
 .grid-item {
-    background-color: aquamarine;
-    padding: 2em;
+    text-decoration: none;
+    margin: 20px;
+    padding: 12px;
     /* display: flex; */
-    display: block;
     text-align: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     z-index: 20 !important;
+    overflow-y: scroll;
+    transition: all .73s ease;
+    background: rgb(247, 247, 247);
+    border-radius: 2.3px;
+}
+
+.grid-item:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background: rgb(235, 235, 235);
+}
+
+.card-name, .card-description {
+    margin: 7px;
+    text-decoration: none;
+    color: black;
+}
+
+.card-name {
+    font-style: italic;
+}
+
+.card-description {
+    margin: 7px;
+    font-weight: bolder;
 }

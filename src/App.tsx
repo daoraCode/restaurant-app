@@ -10,6 +10,8 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Home } from './pages/home/Home';
 import { Detail } from './pages/detail/Detail';
 import { NotFound } from './notFound/NotFound';
+
+// context
 import { RestaurantProvider } from './contexts/RestaurantContext';
 
 function App() {

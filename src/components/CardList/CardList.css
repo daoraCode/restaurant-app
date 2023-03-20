@@ -1,8 +1,12 @@
-.card-grid {
-    padding: 20px;
-    border: 3px red solid;
-    display: flex;
-    width: 25rem;
-    height: 40rem;
-    background-color: aqua;
+.main-grid-container {
+    margin: auto;
+    display: grid;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: auto auto;
+}
+
+.grid-item-link {
+    text-decoration: none;
 }

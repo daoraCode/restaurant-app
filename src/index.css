@@ -2,13 +2,26 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
 }
 
 img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  display: block;
+  width: 90%;
+  height: 220px;
+  align-items: middle;
+  object-fit: contain;
+  justify-items: center;
+  display: inline-block;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -1.25px;
+  color: #ee7652;
 }
 
 body {
