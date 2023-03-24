@@ -1,6 +1,6 @@
 .main-not-found {
   width: 100%;
-  background-image: linear-gradient(180deg, #e54a6933, white);
+  background-image: linear-gradient(180deg, #f092a332, white);
   height: 75vh;
   display: flex;
   padding: 2em;
@@ -28,6 +28,6 @@
 
 .not-found-link:hover {
   display: block;
-  transform: scale(1.1);
+  transform: scale(1.03);
   background-color: rgba(86, 86, 86, 0.134);
 }

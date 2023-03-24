@@ -1,8 +1,6 @@
 import React from 'react';
-
 import { RestaurantType } from '../../model/Restaurant';
 import { LikeButton } from '../Button/LikeButton';
-
 import './Card.css';
 
 type RestaurantTypeProps = {
@@ -16,7 +14,7 @@ export const Card = ({ restaurant }: RestaurantTypeProps) => {
         <img
           className='card-img'
           src={`${restaurant.img}`}
-          alt='meal'
+          alt='restaurant'
           loading='lazy'
         />
       </div>
