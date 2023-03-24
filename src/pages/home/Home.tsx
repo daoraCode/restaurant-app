@@ -1,12 +1,13 @@
 import React from 'react';
 
 import './Home.css';
-import { CardList } from '../../components/CardList/CardList';
+import { CardGrid } from '../../components/CardGrid/CardGrid';
 
 export const Home = () => {
   return (
-    <main>
-      <CardList />
+    <main className='main-home'>
+      <h1 className='main-title-home'>Menu Principal</h1>
+      <CardGrid />
     </main>
   );
 };

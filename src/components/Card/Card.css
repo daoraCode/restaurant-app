@@ -1,35 +1,58 @@
-.grid-item {
-    text-decoration: none;
-    margin: 20px;
-    padding: 12px;
-    /* display: flex; */
-    text-align: center;
-    align-items: center;
-    width: 500px;
-    height: 350px;
-    z-index: 20 !important;
-    overflow-y: scroll;
-    transition: all .73s ease;
-    background: rgb(247, 247, 247);
-    border-radius: 2.3px;
+.card-container,
+.card-footer {
+  border-radius: 9px;
+  /* margin: auto 0; */
 }
 
-.grid-item:hover {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    background: rgb(235, 235, 235);
+.card-footer-content {
+  border: none;
+  align-items: center;
 }
 
-.card-name, .card-description {
-    margin: 7px;
-    text-decoration: none;
-    color: black;
+.card-footer {
+  padding: 2.45px;
+  display: flex;
+  gap: 4.6rem;
+  justify-content: space-between;
+}
+
+.card-container {
+  padding: 4.45px;
+  background: rgb(226, 222, 222);
+  min-height: auto;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.card-hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 2.45px;
+  height: 253px;
+}
+
+.card-img {
+  flex-shrink: 0;
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: 9px !important;
+}
+
+.card-name,
+.card-description {
+  padding: 4px;
 }
 
 .card-name {
-    font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 .card-description {
-    margin: 7px;
-    font-weight: bolder;
+  font-weight: 600;
+  font-size: 15px;
+  font-style: italic;
 }

@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { data } from '../data/data';
-import { Restaurant } from '../model/Restaurant';
+import { RestaurantType } from '../model/Restaurant';
 
 type RestaurantContextProps = {
   children: React.ReactNode;
@@ -8,15 +8,15 @@ type RestaurantContextProps = {
 
 // array of each restaurant (shape of object's data/interface)
 export type RestaurantContextType = {
-  restaurants: Restaurant[];
+  restaurants: RestaurantType[];
 };
 
-// customization createContext() hook
+// customized createContext() hook
 const RestaurantContext = createContext<RestaurantContextType>({
   restaurants: [],
 });
 
-// customization useContext() hook
+// customized useContext() hook
 export const useRestaurantContext = () => {
   const context = useContext(RestaurantContext);
   // runtime checking when provider does not wrapping component properly
@@ -30,7 +30,7 @@ export const useRestaurantContext = () => {
 
 export const RestaurantProvider = ({ children }: RestaurantContextProps) => {
   const [currentRestaurants, setCurrentRestaurants] =
-    useState<Restaurant[]>(data);
+    useState<RestaurantType[]>(data);
 
   return (
     <RestaurantContext.Provider

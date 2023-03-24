@@ -49,7 +49,7 @@ export const data = [
     description_short: 'Brasserie parisienne',
     description_long:
       "Soupe à l'oignon, charcuterie et steaks servis dans une brasserie haut de gamme avec des salles décorées dans des styles différents.",
-    img: 'https://www.chez-papa.com/sites/default/files/gambetta.jpg',
+    img: 'https://lesantiquaires.net/wp-content/uploads/sites/44/2021/11/photo_8.jpg',
     menu: {
       entrees: ['entree 1', 'entree 2'],
       dishes: ['plat 1', 'plat 2', 'plat 3'],
@@ -63,7 +63,7 @@ export const data = [
     description_short: 'Cuisine basque et chaleureuse',
     description_long:
       'Plats basques gastronomiques dans un lieu aux tons chauds et colorés, avec chaises et comptoir en bois.',
-    img: 'https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXMlMjByZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+    img: 'https://media.timeout.com/images/105873826/750/422/image.jpg',
     menu: {
       entrees: ['entree 1', 'entree 2'],
       dishes: ['plat 1', 'plat 2', 'plat 3'],

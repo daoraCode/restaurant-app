@@ -1,0 +1,14 @@
+.like-button {
+    font-family: inherit;
+		padding: 1rem 2.2rem;
+		border: none;
+		border-radius: 9px;
+		transition: all .25s ease-in-out;
+		background-color: #a3989992;
+		cursor: pointer;
+		z-index: 2000;
+	}
+	
+	.like-button:hover {
+	background-color: #a39899e4;
+}

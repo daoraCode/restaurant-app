@@ -1,18 +1,15 @@
 import React from 'react';
 
-// react-router
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// navbar component
 import { Navbar } from './components/Navbar/Navbar';
 
-// pages
 import { Home } from './pages/home/Home';
-import { Detail } from './pages/detail/Detail';
-import { NotFound } from './notFound/NotFound';
+import { RestaurantDetail } from './pages/detail/RestaurantDetail';
+import { Bookmark } from './pages/bookmark/Bookmark';
+import { NotFound } from './pages/not_found/NotFound';
 
-// context
-import { RestaurantProvider } from './contexts/RestaurantContext';
+import { RestaurantProvider } from './context/RestaurantContext';
 
 function App() {
   return (
@@ -22,7 +19,11 @@ function App() {
         <Routes>
           <Route path='/'>
             <Route index element={<Home />} />
-            <Route path='/restaurants/:id' element={<Detail />} />
+            <Route
+              path='/restaurants/detail/:id'
+              element={<RestaurantDetail />}
+            />
+            <Route path='/bookmarks' element={<Bookmark />} />
           </Route>
           <Route path='*' element={<NotFound />} />
         </Routes>

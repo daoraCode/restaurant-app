@@ -1,17 +1,21 @@
 import React from 'react';
-import './Navbar.css';
-
-// router
 import { Link } from 'react-router-dom';
+
+import './Navbar.css';
 
 export const Navbar = () => {
   return (
-    <div className='blur-container'>
-      <header className='header'>
-        <Link className='navbar-link' to='/'>
-          Restaurants Adorés
+    <div className='nav-container'>
+      <div className='nav'>
+        <Link to='/'>
+          <p className='nav-link logo'>
+            LES RESTAURANTS ADORÉS <span> 🍧</span>
+          </p>
         </Link>
-      </header>
+        <Link to='/bookmarks'>
+          <p className='nav-link'>FAVORIS</p>
+        </Link>
+      </div>
     </div>
   );
 };

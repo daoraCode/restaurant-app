@@ -1,21 +1,32 @@
 import React from 'react';
+
+import { RestaurantType } from '../../model/Restaurant';
+import { LikeButton } from '../Button/LikeButton';
+
 import './Card.css';
 
-import { Restaurant } from '../../model/Restaurant';
-
 type RestaurantTypeProps = {
-  restaurant: Restaurant;
+  restaurant: RestaurantType;
 };
 
 export const Card = ({ restaurant }: RestaurantTypeProps) => {
   return (
-    <div className='grid-item'>
-      <div className='inner_grid'>
-        <img src={`${restaurant.img}`} alt='meal' loading='lazy' />
-        <p className='card-name'>{restaurant.name}</p>
-        <p className='card-description'>{restaurant.description_short}</p>
+    <div className='card-container'>
+      <div className='card-hero-img'>
+        <img
+          className='card-img'
+          src={`${restaurant.img}`}
+          alt='meal'
+          loading='lazy'
+        />
       </div>
-      <div className='grid-item-like-button'></div>
+      <div className='card-footer'>
+        <div className='card-footer-content'>
+          <p className='card-name'>{restaurant.name}</p>
+          <p className='card-description'>{restaurant.description_short}</p>
+        </div>
+        <LikeButton />
+      </div>
     </div>
   );
 };
