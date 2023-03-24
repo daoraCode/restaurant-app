@@ -6,28 +6,36 @@
   align-items: center;
   padding: 40px 22px;
   background-color: #eec9962a;
-  min-height: 77px;
+  min-height: 68px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   box-shadow: rgba(17, 12, 46, 0.35) 0px 48px 100px 0px;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
 }
 
-.nav-link {
+.bookmarks-link,
+.logo {
+  border-radius: 6px;
   font-size: 22px;
   font-weight: 900;
-  padding: 0.75em;
+  padding: .74em;
   letter-spacing: -0.05em;
-}
-
-.nav-link:hover {
-  border-radius: 9px;
-  background-color: #8f7d7d2a;
 }
 
 .logo {
   font-style: italic;
   font-size: 25px;
-  color: #000;
+  color: inherit;
   align-self: center;
+  background-color: #8f7d7d4d;
+}
+
+.bookmarks-link:hover {
+  background-color: #8f7d7d27;
+}
+
+.logo:hover {
+  background-color: #8f7d7d27;
 }

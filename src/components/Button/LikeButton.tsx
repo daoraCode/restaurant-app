@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './LikeButton.css';
-import { Heart } from '../../svg/Heart';
+import { Heart } from '../SVG:Image/Heart';
 
 export const LikeButton = () => {
   const [isClicked, setIsClicked] = useState(false);

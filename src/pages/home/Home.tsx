@@ -4,8 +4,8 @@ import { CardGrid } from '../../components/CardGrid/CardGrid';
 
 export const Home = () => {
   return (
-    <main className='main-home'>
-      <h1 className='main-title-home'>Menu Principal</h1>
+    <main className='home-container'>
+      <h1 className='home-heading'>Menu Principal</h1>
       <CardGrid />
     </main>
   );

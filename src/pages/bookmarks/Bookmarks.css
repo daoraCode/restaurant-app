@@ -2,7 +2,6 @@
   display: flex;
   background-image: linear-gradient(180deg, #ffc52633, white);
   display: flex;
-  height: 100vh;
   padding: 2.5em;
   height: 1500px;
 }
@@ -10,5 +9,5 @@
 .main-title-bookmark {
   font-size: 90px;
   letter-spacing: -0.05em;
-  padding-bottom: 0.8em;
+  padding-bottom: 25px;
 }

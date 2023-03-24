@@ -1,36 +1,31 @@
-.main-rest-detail {
+.detail-container {
   padding: 2.5em;
   background-image: linear-gradient(180deg, #a7cdf71a, white);
   height: 1500px;
 }
 
-.rest-detail-title {
+.detail-heading {
   font-size: 90px;
   letter-spacing: -0.05em;
-  padding-bottom: 0.8em;
+  padding-bottom: 25px;
 }
 
-.rest-description-container {
+.detail_inner {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.rest-detail-name {
-  font-size: 50px;
+.detail-name {
+  font-size: 30px;
   font-style: italic;
   background-color: rgba(0, 0, 0, 0.161);
   border-radius: 9px;
-  padding: 1em 1.2em;
+  padding: .55em 1.6em;
 }
 
-.rest-detail-info, .rest-detail-name  {
+.detail-info, .detail-name  {
   margin-bottom: 1.3em;
-}
-
-.rest-detail-hero {
-  max-width: 100%;
-  height: 18%;
 }
 
 .rest-img {

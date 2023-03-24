@@ -7,12 +7,12 @@ export const Navbar = () => {
     <div className='nav-container'>
       <div className='nav'>
         <Link to='/'>
-          <p className='nav-link logo'>
+          <p className='logo'>
             LES RESTAURANTS ADORÉS <span> 🍧</span>
           </p>
         </Link>
         <Link to='/bookmarks'>
-          <p className='nav-link'>FAVORIS</p>
+          <p className='bookmarks-link'>FAVORIS</p>
         </Link>
       </div>
     </div>

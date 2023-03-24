@@ -23,16 +23,16 @@ export const Restaurant = () => {
   }
 
   return (
-    <main className='main-rest-detail'>
-      <h1 className='rest-detail-title'>Infos</h1>
-      <div className='rest-description-container'>
-        <h2 className='rest-detail-name'>{restaurantDetail.name}</h2>
-        <p className='rest-detail-info'>{restaurantDetail.description_long}</p>
+    <main className='detail-container'>
+      <h1 className='detail-heading'>Infos</h1>
+      <div className='detail_inner'>
+        <h2 className='detail-name'>{restaurantDetail.name}</h2>
+        <p className='detail-info'>{restaurantDetail.description_long}</p>
       </div>
       <img
         className='rest-img'
         src={`${restaurantDetail.img}`}
-        alt='restaurant'
+        alt={`Restaurant ${restaurantDetail.name}`}
         loading='lazy'
       />
     </main>
