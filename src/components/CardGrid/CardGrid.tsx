@@ -9,10 +9,7 @@ export const CardGrid = () => {
   return (
     <div className='grid-container'>
       {restaurants.map((restaurant) => (
-        <Link
-          key={restaurant.id}
-          to={{ pathname: `/details/${restaurant.id}` }}
-        >
+        <Link key={restaurant.id} to={{ pathname: `/info/${restaurant.id}` }}>
           <Card restaurant={restaurant} />
         </Link>
       ))}

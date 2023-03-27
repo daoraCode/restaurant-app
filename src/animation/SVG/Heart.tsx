@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 
-import heartAnimation from '../../Animation/heart.json';
+import heartAnimation from '../heart.json';
 
 export const Heart = () => {
   const animation = useRef(null);

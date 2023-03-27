@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import { createContext, useContext } from 'react';
 import { data } from '../data/data';
 import { RestaurantType } from '../model/Restaurant';
 

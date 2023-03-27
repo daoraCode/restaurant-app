@@ -15,16 +15,16 @@ export const Restaurant = () => {
       (restaurant) => restaurant.id === Number(restaurantId)
     );
     setRestaurantDetail(restaurant ?? null);
-  }, [restaurantId, restaurants]);
+  }, [restaurants, restaurantId]);
 
-  console.log('10', restaurantId);
+  console.log('restautaurant:', restaurantId);
   if (restaurantDetail == null) {
     return null;
   }
 
   return (
     <main className='detail-container'>
-      <h1 className='detail-heading'>Infos</h1>
+      <h1 className='detail-heading'>Information</h1>
       <div className='detail_inner'>
         <h2 className='detail-name'>{restaurantDetail.name}</h2>
         <p className='detail-info'>{restaurantDetail.description_long}</p>

@@ -1,17 +1,26 @@
 .card-container,
 .card-footer {
   border-radius: 9px;
-  /* margin: auto 0; */
 }
 
 
 .card-container {
   padding: 4.45px;
-  background: rgb(226, 222, 222);
+  background: rgba(226, 222, 222, 0.553);
   min-height: auto;
   transition: all 0.3s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  z-index: -999999;
 }
+
+/* transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+transform:skew(705deg); */
+
+.card-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 2px;
+}
+
+
 
 .card-hero-img {
   display: flex;
