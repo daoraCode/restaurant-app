@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { RestaurantType } from '../../model/Restaurant';
 import { useParams } from 'react-router-dom';
+import { RestaurantType } from '../../model/Restaurant';
 import { useRestaurantContext } from '../../context/RestaurantContext';
 import './Restaurant.css';
 
@@ -17,7 +17,7 @@ export const Restaurant = () => {
     setRestaurantDetail(restaurant ?? null);
   }, [restaurants, restaurantId]);
 
-  console.log('restautaurant:', restaurantId);
+  console.log('line 20, restautaurant:', restaurantId);
   if (restaurantDetail == null) {
     return null;
   }

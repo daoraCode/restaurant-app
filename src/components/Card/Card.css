@@ -1,6 +1,8 @@
 .card-container,
 .card-footer {
   border-radius: 9px;
+  cursor: pointer;
+  
 }
 
 
@@ -8,19 +10,12 @@
   padding: 4.45px;
   background: rgba(226, 222, 222, 0.553);
   min-height: auto;
-  transition: all 0.3s ease-in-out;
-  z-index: -999999;
+  transition: all 0.2s ease-in-out;
 }
-
-/* transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-transform:skew(705deg); */
 
 .card-container:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 2px;
 }
-
-
 
 .card-hero-img {
   display: flex;
@@ -63,7 +58,7 @@ transform:skew(705deg); */
 }
 
 .card-footer {
-  padding: 2.45px;
+  padding: 1em;
   display: flex;
   gap: 2.2rem;
   justify-content: space-between;

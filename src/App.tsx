@@ -14,7 +14,7 @@ function App() {
       <RestaurantProvider>
         <Routes>
           <Route index path='/' element={<Home />} />
-          <Route path='/info/:restaurantId' element={<Restaurant />} />
+          <Route path='/restaurants/:restaurantId' element={<Restaurant />} />
           <Route path='/bookmarks' element={<Bookmarks />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
