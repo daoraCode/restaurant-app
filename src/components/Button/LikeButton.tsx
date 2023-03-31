@@ -1,20 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Heart } from '../SVG:Image/Heart';
 import './LikeButton.css';
 
 const LikeButton = () => {
   const [isClicked, setIsClicked] = useState(false);
 
-  const handleLikeBtn = () => {
+  const handlClickBtn = () => {
     console.log('hello');
     setIsClicked(!isClicked);
   };
 
   return (
-    <button
-      className={isClicked ? 'like-fill-btn' : 'like-btn'}
-      onClick={handleLikeBtn}
-    >
+    <button className={isClicked ? 'like-fill-btn' : 'like-btn'}>
       <Heart />
     </button>
   );

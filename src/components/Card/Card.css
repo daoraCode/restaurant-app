@@ -63,3 +63,44 @@
   gap: 2.2rem;
   justify-content: space-between;
 }
+
+
+/* css btn */
+
+.like-btn {
+  font-family: inherit;
+  padding: .55rem 1.32rem;
+  transition: all 0.25s ease-in-out;
+  background-color: #a3989992;
+  border-radius: 9px;
+  cursor: pointer;
+  z-index: 20;
+  border: none;
+  fill-rule: antiquewhite !important;
+}
+
+.like-fill-btn {
+  font-family: inherit;
+  padding: .55rem 1.32rem;
+  transition: all 0.25s ease-in-out;
+  background-color: #a3989992;
+  border-radius: 9px;
+  cursor: pointer;
+  z-index: 20;
+  border: none;
+  background-color: #c74062cd;
+}
+
+.like-fill-btn > svg > path {
+  fill-rule: inherit !important;
+}
+
+.like-btn > svg > path {
+  color: #ede2e2;
+  fill-rule: inherit;
+}
+
+
+.like-btn:hover {
+  color: #ede2e2;
+}
