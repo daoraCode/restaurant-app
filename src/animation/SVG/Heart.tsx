@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
-
 import heartAnimation from '../heart.json';
 
 export const Heart = () => {

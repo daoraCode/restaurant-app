@@ -18,7 +18,6 @@ const FavoritesContext = createContext<FavoritesContextType>({
 
 export const useFavoritesContext = () => {
   const context = useContext(FavoritesContext);
-  // runtime checking when provider does not wrapping component properly
   if (!context) {
     throw new Error(
       'restaurantContext has to be used within FavoritesProvider'

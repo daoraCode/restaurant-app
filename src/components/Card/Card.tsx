@@ -4,7 +4,6 @@ import { useFavoritesContext } from '../../context/FavoritesContext';
 import { RestaurantType } from '../../model/Restaurant';
 import { Heart } from '../SVG:Image/Heart';
 import { DeletionModal } from '../../components/Modal/DeletionModal';
-
 import './Card.css';
 
 type RestaurantTypeProps = {

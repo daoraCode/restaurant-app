@@ -45,14 +45,12 @@ export const Restaurant = () => {
         alt={`Restaurant ${restaurantDetail.name}`}
         loading='lazy'
       />
-      {restaurantDetail.id && (
-        <button
-          className='remove-btn-detail'
-          onClick={() => handleRemove(restaurantDetail.id)}
-        >
-          Retirer des Favoris
-        </button>
-      )}
+      <button
+        className='remove-btn-detail'
+        onClick={() => handleRemove(restaurantDetail.id)}
+      >
+        Retirer des Favoris
+      </button>
       <div className='menu-item'>{restaurantDetail.menu.deserts}</div>
       <div className='menu-item'>{restaurantDetail.menu.dishes}</div>
       <div className='menu-item'>{restaurantDetail.menu.entrees}</div>

@@ -16,7 +16,6 @@ const RestaurantContext = createContext<RestaurantContextType>({
 
 export const useRestaurantContext = () => {
   const context = useContext(RestaurantContext);
-  // runtime checking when provider does not wrapping component properly
   if (!context) {
     throw new Error(
       'restaurantContext has to be used within RestaurantProvider'
