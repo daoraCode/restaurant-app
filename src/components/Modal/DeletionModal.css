@@ -3,8 +3,8 @@
   flex-direction: column;
   position: fixed;
   background: white;
-  width: 60%;
-  height: 150px;
+  width: 50%;
+  height: 205px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -12,15 +12,16 @@
   border-radius: 10px;
   -webkit-box-shadow: 0px 29px 100px 17px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 29px 100px 17px rgba(66, 68, 90, 1);
-  box-shadow: 0px 29px 100px 17px rgba(66, 68, 90, 1);
+  box-shadow: 0px 29px 100px 17px rgba(66, 68, 90, 0.533);
   z-index: 2000;
-  background: rgba(226, 222, 222, 0.96);
-  border-radius: 9px;
+  background: rgba(226, 222, 222);
+  border-radius: 16px;
 }
 
 .heading-modal-text {
   font-size: 27px;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .remove-btn-container {
@@ -36,8 +37,8 @@
   padding: .62rem .98rem;
   cursor: pointer;
   background-color: rgb(37, 94, 193);
-  border-radius: 5px;
-  margin: 20px 10px;
+  border-radius: 8px;
+  margin: 1em;
 }
 
 .cancel-btn {
@@ -46,6 +47,6 @@
   padding: .62rem .89rem;
   cursor: pointer;
   background-color: crimson;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 20px 10px;
 }

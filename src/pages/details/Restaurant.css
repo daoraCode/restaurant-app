@@ -37,3 +37,29 @@
   border-radius: 9px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 2px;
 }
+
+.remove-btn-detail {
+  all: unset;
+  font-weight: 600;
+  display: block;
+  border-radius: 2.5px;
+  margin: 3em auto;
+  padding: 0.72em 1.4em;
+  transition: all .3s ease-in-out;
+  background-color: rgba(207, 22, 74, 0.32);
+  border-radius: 9px;
+}
+
+.remove-btn-detail:hover {
+  display: block;
+  transform: scale(1.1);
+}
+
+
+.menu-item {
+  display: block;
+  padding: 1em;
+  margin: 2em;
+  border-radius: 9px;
+  background-color: rgba(77, 77, 109, 0.283);
+}

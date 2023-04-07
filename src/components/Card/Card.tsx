@@ -12,7 +12,7 @@ type RestaurantTypeProps = {
 };
 
 export const Card = ({ restaurant }: RestaurantTypeProps) => {
-  const { favoritesIds, addFavorites, removeFavorites } = useFavoritesContext();
+  const { favoritesIds, addFavorites } = useFavoritesContext();
 
   const [showModal, setShowModal] = useState(false);
   const [isFavorite, setIsFavorite] = useState(
@@ -50,7 +50,8 @@ export const Card = ({ restaurant }: RestaurantTypeProps) => {
         </button>
         <DeletionModal
           show={showModal}
-          handleClose={() => setShowModal(false)}
+          handleCancel={() => setShowModal(false)}
+          restaurant={restaurant}
         />
       </div>
     </div>

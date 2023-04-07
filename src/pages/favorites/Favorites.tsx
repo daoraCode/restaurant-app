@@ -8,7 +8,6 @@ export const Favorites = () => {
   const { restaurants } = useRestaurantContext();
   const { favoritesIds } = useFavoritesContext();
 
-  // [] => [isFavorite: restaurant]
   const favoriteRestaurants = restaurants.filter((restaurant) =>
     favoritesIds.includes(restaurant.id)
   );

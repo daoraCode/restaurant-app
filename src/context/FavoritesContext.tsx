@@ -39,7 +39,6 @@ export const FavoritesProvider = ({ children }: FavoritesContextProps) => {
 
   const removeFavorites = (restId: number) => {
     const tmpFavIds = [...favoritesIds].filter((id) => id !== restId);
-    console.log('fav ids', tmpFavIds);
     setFavoritesIds(tmpFavIds);
   };
 
