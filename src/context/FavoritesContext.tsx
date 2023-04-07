@@ -1,19 +1,19 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { data } from '../data/data';
+
 type FavoritesContextProps = {
   children: React.ReactNode;
 };
 
 export type FavoritesContextType = {
   favoritesIds: number[];
-  addBookmark: (restId: number) => void; // add
-  removeBookmark: (restId: number) => void; // remove
+  addFavorites: (restId: number) => void; // add
+  removeFavorites: (restId: number) => void; // remove
 };
 
 const FavoritesContext = createContext<FavoritesContextType>({
   favoritesIds: [],
-  addBookmark: () => undefined,
-  removeBookmark: () => undefined,
+  addFavorites: () => undefined,
+  removeFavorites: () => undefined,
 });
 
 export const useFavoritesContext = () => {
@@ -33,12 +33,14 @@ const parsed = favIds != null ? JSON.parse(favIds) : [];
 export const FavoritesProvider = ({ children }: FavoritesContextProps) => {
   const [favoritesIds, setFavoritesIds] = useState<number[]>(parsed);
 
-  const addBookmark = (restId: number) => {
-    // add id from favoritesIds
+  const addFavorites = (restId: number) => {
+    setFavoritesIds([...favoritesIds, restId]);
   };
 
-  const removeBookmark = (restId: number) => {
-    // delete id from favoritesIds
+  const removeFavorites = (restId: number) => {
+    const tmpFavIds = [...favoritesIds].filter((id) => id !== restId);
+    console.log('fav ids', tmpFavIds);
+    setFavoritesIds(tmpFavIds);
   };
 
   useEffect(() => {
@@ -49,8 +51,8 @@ export const FavoritesProvider = ({ children }: FavoritesContextProps) => {
     <FavoritesContext.Provider
       value={{
         favoritesIds,
-        removeBookmark,
-        addBookmark,
+        addFavorites,
+        removeFavorites,
       }}
     >
       {children}

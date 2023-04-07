@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useFavoritesContext } from '../../context/FavoritesContext';
 import { RestaurantType } from '../../model/Restaurant';
 import { Heart } from '../SVG:Image/Heart';
-// import { useRestaurantContext } from '../../context/RestaurantContext';
+import { DeletionModal } from '../../components/Modal/DeletionModal';
+
 import './Card.css';
 
 type RestaurantTypeProps = {
@@ -10,11 +12,17 @@ type RestaurantTypeProps = {
 };
 
 export const Card = ({ restaurant }: RestaurantTypeProps) => {
-  const [isClicked, setIsClicked] = useState(false);
+  const { favoritesIds, addFavorites, removeFavorites } = useFavoritesContext();
 
-  const handlClickBtn = () => {
-    console.log('hello');
-    setIsClicked(!isClicked);
+  const [showModal, setShowModal] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(
+    favoritesIds.some((id) => id === restaurant.id)
+  );
+
+  const handleClick = (restId: number, isFavorite: boolean) => {
+    if (isFavorite) setShowModal(true);
+    else addFavorites(restId);
+    setIsFavorite(!isFavorite);
   };
 
   return (
@@ -35,11 +43,15 @@ export const Card = ({ restaurant }: RestaurantTypeProps) => {
           <p className='card-description'>{restaurant.description_short}</p>
         </div>
         <button
-          className={isClicked ? 'like-fill-btn' : 'like-btn'}
-          onClick={handlClickBtn}
+          className={isFavorite ? 'like-fill-btn' : 'like-btn'}
+          onClick={() => handleClick(restaurant.id, isFavorite)}
         >
           <Heart />
         </button>
+        <DeletionModal
+          show={showModal}
+          handleClose={() => setShowModal(false)}
+        />
       </div>
     </div>
   );
